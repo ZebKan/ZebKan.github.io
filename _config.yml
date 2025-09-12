@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: My Personal Portfolio
 
 # Your name to show in the footer
-author: Some Person
+author: Zebunnisa Kanji
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: 
 
 ################
 # --- Logo --- #
@@ -50,14 +50,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "777756@pdsb.net"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  facebook: n/a
+  github: n/a
+  twitter: n/a
+  patreon: n/a
+  youtube: "@n/a"
+  whatsapp: n/a
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
