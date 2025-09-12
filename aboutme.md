@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: The point of this website:
+subtitle: The point of this website
 ---
 
 This website willserve as my personal portfolio, showcasing a collection of my projects within this course. 
