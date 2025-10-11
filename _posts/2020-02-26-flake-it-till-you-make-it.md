@@ -1,18 +1,28 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: Exploratory Data Analysis of Anscombe's Quartet
+subtitle: Notebook and Report
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [books, test]
-author: Sharon Smith and Barry Simpson
+tags: [eda, python, data-science, anscombe]
+author: Zebunnisa Kanji
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+# Abstract
+   This project explores Anscombe’s Quartet, a set of four small datasets that share nearly identical summary statistics but look very different when plotted. Using Python, I calculated the mean, variance, correlation, regression line, and coefficient of determination (R²) for each dataset. Although these statistical values are almost the same, the visualizations reveal distinct patterns — one linear, one curved, one with an outlier, and with a single influential point.
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+The analysis highlights the importance of Exploratory Data Analysis (EDA) and the principles of clear visualization. By applying Edward Tufte’s ideas, such as maximizing data-to-ink ratio and removing chartjunk, I created plots that communicate the data in this way.
+# Introduction
+    Francis Anscombe created four datasets, now known as Anscombe’s Quartet, to demonstrate the importance of visualizing data. Each dataset contains eleven pairs of x and y values. When analyzed statistically, all four sets have almost identical means, variances, correlations, and linear regression lines — yet when plotted, they show dramatically different patterns.
+    The purpose of Exploratory Data Analysis (EDA) is to look beyond simple summary statistics and use graphs to uncover relationships, trends, and outliers that numbers alone cannot show. This project applies EDA techniques to Anscombe’s Quartet using Python, calculating descriptive statistics and creating scatter plots to compare each dataset. The goal is to understand how visualization reveals the deeper structure of data and why clear, ethical data presentation is essential in science and engineering.
+# Data
+The datasets are stored in `anscombe.csv` and contain columns: `dataset`, `x`, `y`. Each dataset (I–IV) has 11 data points. A preview of the first few rows:
 
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
-
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+| dataset | x  | y    |
+|---------|----|------|
+| I       | 10 | 8.04 |
+| I       | 8  | 6.95 |
+| I       | 13 | 7.58 |
+| I       | 9  | 8.81 |
+| I       | 11 | 8.33 |
