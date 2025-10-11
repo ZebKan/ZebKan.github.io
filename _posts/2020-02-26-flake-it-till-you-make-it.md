@@ -14,7 +14,7 @@ author: Zebunnisa Kanji
 
 The analysis highlights the importance of Exploratory Data Analysis (EDA) and the principles of clear visualization. By applying Edward Tufte’s ideas, such as maximizing data-to-ink ratio and removing chartjunk, I created plots that communicate the data in this way.
 # Introduction
-    Francis Anscombe created four datasets, now known as Anscombe’s Quartet, to demonstrate the importance of visualizing data. Each dataset contains eleven pairs of x and y values. When analyzed statistically, all four sets have almost identical means, variances, correlations, and linear regression lines — yet when plotted, they show dramatically different patterns.
+   Francis Anscombe created four datasets, now known as Anscombe’s Quartet, to demonstrate the importance of visualizing data. Each dataset contains eleven pairs of x and y values. When analyzed statistically, all four sets have almost identical means, variances, correlations, and linear regression lines — yet when plotted, they show dramatically different patterns.
     The purpose of Exploratory Data Analysis (EDA) is to look beyond simple summary statistics and use graphs to uncover relationships, trends, and outliers that numbers alone cannot show. This project applies EDA techniques to Anscombe’s Quartet using Python, calculating descriptive statistics and creating scatter plots to compare each dataset. The goal is to understand how visualization reveals the deeper structure of data and why clear, ethical data presentation is essential in science and engineering.
 # Data
 The datasets are stored in `anscombe.csv` and contain columns: `dataset`, `x`, `y`. Each dataset (I–IV) has 11 data points. A preview of the first few rows:
@@ -42,3 +42,14 @@ The datasets are stored in `anscombe.csv` and contain columns: `dataset`, `x`, `
 ## Violin/Box Plots
 ![Box Plots](/assets/img/anscombe_boxplots_fixed.png)
 ![Violin Plots](/assets/img/anscombe_violinplots_fixed.png)
+
+# Interpretation:
+## Why summary statistics alone are insufficient
+Although the four datasets in Anscombe’s Quartet share nearly identical summary statistics — including mean, variance, correlation, regression line, and R² — their scatterplots tell completely different stories.
+Dataset I follows a roughly linear pattern. Dataset II is curved (non-linear). Dataset III has one point far from the trend (an outlier), and Dataset IV is dominated by a single leverage point that determines the regression line.
+This shows why relying only on numerical summaries is misleading: visualizing the data reveals structure, outliers, and relationships that summary statistics hide.
+
+# Conclusion and next steps
+The Anscombe Quartet demonstrates that datasets with identical statistical summaries can differ dramatically in visual form. This reinforces that summary statistics are only the first step of data analysis — visualization is essential for detecting non-linear patterns and outliers.
+
+Next steps: Interactive dashboards (e.g., Plotly or Altair) could help users explore how regression lines change as individual data points move.
