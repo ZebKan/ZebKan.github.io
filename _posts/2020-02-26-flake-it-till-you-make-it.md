@@ -31,14 +31,14 @@ The datasets are stored in `anscombe.csv` and contain columns: `dataset`, `x`, `
 [Interactive visualizations available in anscombeZK.ipynb]
 
 ## Scatterplots with Regression Lines
-![Scatterplots with Regression Lines](assets/img/anscombe_quartet_labeled.png)
+![Scatterplots with Regression Lines](/assets/img/anscombe_quartet_labeled.png)
 
 ## Overlaid
-![Overlaid Scatterplots](assets/img/anscombe_overlaid.png)
+![Overlaid Scatterplots](/assets/img/anscombe_overlaid.png)
 
 ## Residual Plots
-![Residual Plots](assets/img/anscombe_quartet_residual.png)
+![Residual Plots](/assets/img/anscombe_quartet_residual.png)
 
 ## Violin/Box Plots
-![Box Plots](assets/img/anscombe_boxplots_fixed.png)
-![Violin Plots](assets/img/anscombe_violinplots_fixed.png)
+![Box Plots](/assets/img/anscombe_boxplots_fixed.png)
+![Violin Plots](/assets/img/anscombe_violinplots_fixed.png)
