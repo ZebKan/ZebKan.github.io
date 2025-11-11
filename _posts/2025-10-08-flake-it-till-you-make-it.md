@@ -28,7 +28,7 @@ The datasets are stored in `anscombe.csv` and contain columns: `dataset`, `x`, `
 | I       | 11 | 8.33 |
 
 # Visualizations
-[Interactive visualizations available in anscombeZK.ipynb]
+[Interactive visualizations available in anscombeZK.ipynb](https://github.com/ZebKan/anscombe-eda-zebunnisak/blob/main/anscombe-eda-ZK/anscombeZK.ipynb)
 
 ## Scatterplots with Regression Lines
 ![Scatterplots with Regression Lines](/assets/img/anscombe_quartet_labeled.png)
