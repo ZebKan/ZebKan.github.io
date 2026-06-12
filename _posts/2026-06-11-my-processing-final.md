@@ -8,6 +8,9 @@ share-img: /assets/img/path.jpg
 tags: [coding, pixel-game, processingIDE]
 author: Zebunnisa Kanji
 ---
+excerpt: "This project is a showcase of my thought process when writing my code step-by-step, documenting my development of a 2D pixel survival game."
+
+<!--more-->
 
 # Introduction
    This project is a showcase of my thought process when writing my code step-by-step; this is acheived through organizing my code content chronologically, as well as describing milestones made each day.
