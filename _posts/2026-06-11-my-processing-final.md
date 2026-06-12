@@ -95,15 +95,16 @@ These features are not essential for the core gameplay loop, but may be added fo
 
 # Day [2], Jun 2, 2026: Design Stage; IPO Chart and Method descriptions
 
-[insert 2 4x4 tables below];
-|         |    |      |    
-|---------|----|------|----
-|         |    |      |
-|         |    |      |
-|         |    |      |
-|         |    |      |
-|         |    |      |
+## IPO Chart and Method Descriptions
 
+| Method Name        | Description                                                                 | Function |
+|--------------------|-----------------------------------------------------------------------------|----------|
+| checkCollision(fx, fy, sx, sy…) | Checks whether the player can collide with wall tiles, NPCs, storage, etc. Returns true or false depending on if the collision condition is met. | Prevents movement through solid objects |
+| coinSystem()       | Increases coins when zombies are killed or when coin items are collected from storage systems. If zombieDeathStat = true, coins increase by X amount. Also updates UI display. | Handles coin collection and scoring |
+| tileRead()         | Loads the map using a grid of numbers representing tile types (floor, wall, etc). Uses BufferedReader to open and read map.txt with loops. | Generates game world from text file |
+| zombieFunction()   | Controls zombie AI including movement, attack behavior, and health. Zombies detect player within a radius and become aggressive. Dead zombies are removed. | Manages zombie behavior and interactions |
+| playerMovement()   | Handles WASD movement, sprite direction changes, and movement animation. Uses keyPressed for input detection. Updates player speed and direction. | Controls player movement and animation |
+| weaponAttack()     | Called via mousePressed. Handles shooting system where bullets follow mouse direction and deal damage on collision with zombies. | Handles shooting and combat damage |
 
 # Day [3], Jun 3, 2026: Design Stage; GUI design
     I worked on a mock GUI design on paper to get a sense of how I wanted different screens to look. I wanted everything to be simple, and I added notes to where screens may change or their general functions.
