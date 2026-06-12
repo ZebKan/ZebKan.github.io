@@ -107,11 +107,9 @@ These features are not essential for the core gameplay loop, but may be added fo
 | weaponAttack()     | Called via mousePressed. Handles shooting system where bullets follow mouse direction and deal damage on collision with zombies. | Handles shooting and combat damage |
 
 # Day [3], Jun 3, 2026: Design Stage; GUI design
-    I worked on a mock GUI design on paper to get a sense of how I wanted different screens to look. I wanted everything to be simple, and I added notes to where screens may change or their general functions.
-    Below are all the images, they are only rough sketches:
-    [image]
-    [image]
-    [image]
+I worked on a mock GUI design on paper to get a sense of how I wanted different screens to look. I wanted everything to be simple, and I added notes to where screens may change or their general functions.
+    Below are all the images, they are only rough sketches.
+![GUI Design Sketches](assets/img/gui-sample.png)
 
 
 ## Day [4], Jun 4, 2026: Coding Stage; Initializing variables and tile function
