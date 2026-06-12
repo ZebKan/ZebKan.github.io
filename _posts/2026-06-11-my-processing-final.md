@@ -8,15 +8,74 @@ share-img: /assets/img/path.jpg
 tags: [coding, pixel-game, processingIDE]
 author: Zebunnisa Kanji
 ---
-excerpt: "This project is a showcase of my thought process when writing my code step-by-step, documenting my development of a 2D pixel survival game."
-
-<!--more-->
 
 # Introduction
-   This project is a showcase of my thought process when writing my code step-by-step; this is acheived through organizing my code content chronologically, as well as describing milestones made each day.
 
-# The Main Idea:
+This project documents my step-by-step development process for a pixel-based top-down zombie survival game. Instead of only showing the final result, I organized my work chronologically to highlight how the system was built over time, including key milestones, challenges, and design decisions made throughout development.
 
+The goal of this project is not only to build a functional game, but also to demonstrate my learning process in programming, especially in areas such as tile-based world design, player movement, collision detection, and basic game systems.
+
+---
+
+# Main Idea
+
+The game is a **pixel-based top-down zombie survival game** set in a school environment. The player explores a tile-based world, fights zombies, collects resources, and survives increasingly difficult encounters.
+
+The world is built using a **tile system loaded from a text file**, where each number represents a different type of block (such as floor, walls, or storage objects). These tiles also determine collision boundaries, meaning the player and zombies cannot pass through walls.
+
+The player character is controlled using keyboard input and includes **animated sprite movement**, giving directional feedback (idle, walking animations, etc.). The camera follows the player and ensures only a portion of the world is visible at any time, rather than showing the full map.
+
+---
+
+## Core Features (Planned / Implemented)
+
+- **Tile-based world system**
+  - World is generated from a text file
+  - Each number represents a different tile type (floor, wall, storage, etc.)
+  - Collision system prevents movement through walls
+
+- **Player system**
+  - Keyboard movement (WASD controls)
+  - Animated sprites for movement and idle states
+  - Health system (survival mechanic)
+
+- **Zombie system**
+  - Zombies spawn in specific locations or waves
+  - Basic AI that follows the player when in range
+  - Attack system that reduces player health on contact
+  - Health system for zombies (can be defeated)
+
+- **Camera system**
+  - Camera follows player movement
+  - Prevents full map visibility to create exploration and tension
+  - World moves relative to player position
+
+- **Combat system**
+  - Player can shoot projectiles toward the mouse direction
+  - Bullets can damage zombies
+  - Zombies are removed when health reaches zero
+
+- **Resource and progression systems (planned)**
+  - Storage objects (boxes/cabinets) that contain randomized items
+  - Currency system earned through zombie kills or exploration
+  - Crafting system through NPC interaction (“The Builder”)
+
+- **Base system (planned)**
+  - A central safe zone that can be upgraded over time
+  - Crafting upgrades such as weapons, ammo, and building materials
+  - Acts as progression hub between waves
+
+---
+
+## Non-Functional / Optional Components
+
+These features are not essential for the core gameplay loop, but may be added for depth or future expansion:
+
+- Start screen / menu system (not required for gameplay function)
+- Tutorial system (instead handled through an in-game NPC)
+- Armor system or advanced equipment mechanics
+- Multiple wave variations with scaling difficulty (can be simplified to progressive difficulty instead)
+- Complex UI systems beyond basic health and inventory display.
    
 # Day [1], Jun 1, 2026: Design Stage; Pseudocode
   This Monday is the first day of my design stage, where I will be finishing my plan for all the features in my zombie game, etc. Below is my pseudocode:
