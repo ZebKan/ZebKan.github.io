@@ -109,12 +109,12 @@ These features are not essential for the core gameplay loop, but may be added fo
 # Day [3], Jun 3, 2026: Design Stage; GUI design
 I worked on a mock GUI design on paper to get a sense of how I wanted different screens to look. I wanted everything to be simple, and I added notes to where screens may change or their general functions.
     Below are all the images, they are only rough sketches.
-![GUI Sample 1](assets/img/gui-sample-1.png)
-![GUI Sample 2](assets/img/gui-sample-2.png)
-![GUI Sample 3](assets/img/gui-sample-3.png)
-![GUI Sample 4](assets/img/gui-sample-4.png)
-![GUI Sample 5](assets/img/gui-sample-5.png)
-![GUI Sample 6](assets/img/gui-sample-6.png)
+![GUI Sample 1](/assets/img/gui-sample-1.png)
+![GUI Sample 2](/assets/img/gui-sample-2.png)
+![GUI Sample 3](/assets/img/gui-sample-3.png)
+![GUI Sample 4](/assets/img/gui-sample-4.png)
+![GUI Sample 5](/assets/img/gui-sample-5.png)
+![GUI Sample 6](/assets/img/gui-sample-6.png)
 
 
 ## Day [4], Jun 4, 2026: Coding Stage; Initializing variables and tile function
